@@ -147,7 +147,7 @@ width: 100%;
 .galeria img:hover {
     cursor: crosshair;
     opacity: 1;
-    filter: contrast(120%);
+    filter: contrast(110%);
     border-radius: 15px;
 }
 #h{
@@ -170,12 +170,13 @@ h1{
 }
 h2{
     color: black;
+    margin: 0px;
 }
 .yo{
     justify-content: end;
     height: 450px;
     position: absolute;
-    right: 100px;
+    right: 135px;
 
 }
 
@@ -186,6 +187,8 @@ h2{
     padding: 0;
     margin: 20px auto 10px 110px;
 }
+
+
 .caja{
     width: 500px;
     margin-left: 110px;
@@ -207,12 +210,12 @@ p{
     margin: 8px;
     margin-left: 0px;
 }
-h4{
+h3{
     color: black;
     font-size: large;
     margin-bottom: 25px;
 }
-h3{
+h4{
     color: black;
     font-size: large;
     margin-bottom: 0px;
@@ -300,6 +303,65 @@ p{
 }
 /*end main2*/
 
+@media (max-width: 1150px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: medium;
+    }
+    .caja{
+        width: 420px;
+    }
+    #enlinea{
+        width: 420px;
+    }
+    p{
+        font-size: small;
+        margin-left: 17px;
+    }
+    .yo{
+        width: 280px;
+        object-fit: cover;
+    }
+    .wrapper {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1050px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: small;
+    }
+    .caja{
+        width: 370px;
+    }
+    #enlinea{
+        width: 370px;
+    }
+    p{
+        font-size: x-small;
+        margin-left: 28px;
+    }
+    .wrapper {
+        width: 29%;
+    }
+    .yo{
+        height: 330px;
+        width: 230px;
+        right: 80px;
+    }
+}
+
 @media (max-width: 850px){
     .rd1{
         font-size: 20px;
@@ -326,9 +388,116 @@ p{
         height: 70%;
         margin-top: 85px;
     }
-
+    .principal{
+        width: 350px;
+    }
+    .yo{
+        right: 25px;
+    }
+    .linea{
+        display: none;
+    }
+    h3{
+        margin-top: 30px;
+    }
+    h4{
+        text-align: center;
+    }
+    p{
+        text-align: start;
+    }
+    .caja{
+        width: 280px;
+    }
     .wrapper {
-        width: 50%;
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 700px){
+    .rd1{
+        font-size: 20px;
+    }
+    .wpp1{
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+    .boton{
+        margin-top: 18px;
+        font-size: large;
+    }
+
+    .galeria{
+        grid: 95%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 390px;
+        gap: 10px;
+    }
+    .galeria .columna:nth-child(6){
+        grid-column-start: span 1;
+    }
+    #h{
+        height: 70%;
+        margin-top: 85px;
+    }
+    .principal{
+        width: 330px;
+        margin-left: 30px;
+        margin-bottom: 22px;
+    }
+    .yo{
+        width: 260px;
+    }
+    .caja{
+        width: 280px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 665px){
+
+    .main3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .principal{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 0px;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .yo{
+        position: relative;
+        margin:15%;
+    }
+    .caja{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    h3{
+        width: 80%;
+        text-align: center;
+        margin: 0px;
+    }
+    #enlinea{
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+        width: 80%;
+    }
+    .wrapper {
+        width: 90%;
     }
 }
 
@@ -351,6 +520,12 @@ p{
     .footer{
         font-size: medium;
     }
+    .yo{
+        margin:12%;
+    }
+    .wrapper {
+        width: 100%;
+    }
 }
 
 @media (max-width: 351px){
@@ -369,10 +544,16 @@ p{
     .footer{
         font-size: x-small;
     }
+
+    .yo{
+        margin:10%;
+    }
     .boton2{
         font-size: 18px;
         width: 30px;
         height: 30px;
     }
-        
+    .wrapper {
+        width: 90%;
+    } 
 }
