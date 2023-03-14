@@ -57,6 +57,7 @@ nav{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .boton{
@@ -117,14 +118,14 @@ width: 100%;
 
 /*start main index*/
 .main{
-    background-color: rgb(235, 235, 235);
+    background-color: black;
 }
 .galeria{
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    margin-top: 35px;
-    margin-bottom: 60px;
+    padding-top: 35px;
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 320px;
@@ -155,8 +156,52 @@ width: 100%;
 }
 /*end main index*/
 
-/*start main3*/
+/* star main2 */
+.main2{
+    background: white;
+}
+.catalogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.h1{
+    color: black;
+}
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 4 auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1 2 3 4";
+}
+.productos>div>img{
+    margin-bottom: 20px;
+    width: 310px;
+    height: 330px;
+    object-fit: cover;
+}
+.cajaprodu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h2a{
+    color: black;
+    font-size: x-large;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: 600;
+}
+.pa{
+    font-size: larger;
+    text-align: center;
+    color: #333333;
+}
+/* end main2 */
 
+/*start main3*/
 .principal{
     display: flex;
     margin-top: 30px;
@@ -210,17 +255,17 @@ p{
     margin: 8px;
     margin-left: 0px;
 }
-h3{
+.h3{
     color: black;
     font-size: large;
     margin-bottom: 25px;
 }
-h4{
+.h4{
     color: black;
     font-size: large;
     margin-bottom: 0px;
 }
-p{
+.p{
     text-align: center;
     margin-left: 28px;
 }
@@ -310,7 +355,7 @@ p{
     h2{
         font-size: 2rem;
     }
-    h3{
+    .h3{
         font-size: medium;
     }
     .caja{
@@ -319,7 +364,7 @@ p{
     #enlinea{
         width: 420px;
     }
-    p{
+    .p{
         font-size: small;
         margin-left: 17px;
     }
@@ -339,7 +384,7 @@ p{
     h2{
         font-size: 1.5rem;
     }
-    h3{
+    .h3{
         font-size: small;
     }
     .caja{
@@ -348,7 +393,7 @@ p{
     #enlinea{
         width: 370px;
     }
-    p{
+    .p{
         font-size: x-small;
         margin-left: 28px;
     }
@@ -359,6 +404,28 @@ p{
         height: 330px;
         width: 230px;
         right: 80px;
+    }
+}
+
+@media (max-width: 992px){
+    .productos{
+        justify-content: center;
+        grid-template-columns: 2;
+        grid-template-rows: auto;
+        grid-template-areas: "1 2";
+    }
+    .productos>div>h3{
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    .productos>div>p{
+        width: 100%;
+        font-size: medium;
+        margin: 0px;
+        width: max-content;
+    }
+    .cajaprodu{
+        margin-right: 20px;
     }
 }
 
@@ -413,6 +480,15 @@ p{
         width: 60%;
     }
 
+}
+
+@media (max-width: 768px){
+    .maniypedi div h3 {
+        font-size: 28px;
+      }
+      .maniypedi div p {
+        width: 500px;
+      }
 }
 
 @media (max-width: 700px){
@@ -501,6 +577,12 @@ p{
     }
 }
 
+@media (max-width: 584px){
+    .maniypedi div p {
+        width: 335px;
+    }
+}
+
 @media (max-width: 550px){
    
     .galeria{
@@ -524,9 +606,11 @@ p{
         margin:12%;
     }
     .wrapper {
-        width: 100%;
+        width: 25%;
     }
 }
+
+/*365*/
 
 @media (max-width: 351px){
     
@@ -544,6 +628,9 @@ p{
     .footer{
         font-size: x-small;
     }
+    .maniypedi div p {
+        width: 295px;
+      }
 
     .yo{
         margin:10%;
