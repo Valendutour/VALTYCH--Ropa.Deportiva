@@ -171,11 +171,11 @@ width: 100%;
 }
 .productos{
     display: flex;
-    justify-content: space-evenly;
     display: grid;
     grid-template-columns: 4 auto;
     grid-template-rows: auto;
     grid-template-areas: "1 2 3 4";
+    justify-content: space-around;
 }
 .productos>div>img{
     margin-bottom: 20px;
