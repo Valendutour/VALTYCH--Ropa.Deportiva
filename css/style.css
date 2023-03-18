@@ -528,17 +528,6 @@ p{
 }
 
 @media (max-width: 700px){
-    .rd1{
-        font-size: 20px;
-    }
-    .wpp1{
-        font-size: 15px;
-        padding: 8px 15px;
-    }
-    .boton{
-        margin-top: 18px;
-        font-size: large;
-    }
 
     .galeria{
         grid: 95%;
@@ -663,18 +652,7 @@ p{
 }
 
 @media (max-width: 351px){
-    
-    .rd1{
-        font-size: 18px;
-    }
-    .wpp1{
-        font-size: 13px;
-        padding: 6px 13px;
-    }
-    .boton{
-        margin-top: 15px;
-        font-size: medium;
-    }
+   
     .footer{
         font-size: x-small;
     }
