@@ -9,37 +9,66 @@
     <link rel="shortcut icon" href="../fotos/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>VALTYCH - Productos</title>
 </head>
 <body>
     <header>
-        <!--empieza el navbar-->
-        <section class="franja">
-            <div class="rd">
-                <a href="../index.html">
-                    <span class="rd1">VALTYCH</span>
-                </a>
-            </div>
-            <div class="wpp">
-                <a href="https://wa.me/541125661106" target="_blank">
-                    <button class="wpp1"> 
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png" alt="logo-whatsapp" style="height: 30px; margin-right: 5px;" />
-                        <span class="wpp2">Hacé tu pedido ahora</span>
-                    </button>
-                </a>
-            </div>
-        </section>
-        <section>
-            <nav>
-                <ul class="menu align-center">
-                    <li><a class="boton" href="../index.html">Inicio</a></li>
-                    <li><a class="boton" href="productos.html">Productos</a></li>
-                    <li><a class="boton" href="./contacto.html">Sobre mi</a></li>
-                  </ul>
+        <!-- start navbar1-->
+        <div id="navbar1">
+            <nav class="navbar navbar-expand-md bg-black"id="color">
+                <div class="container-fluid">
+                <a class="navbar-brand marca rd1" href="../index.html">VALTYCH</a>
+                <button class="navbar-toggler rounded bg-light" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-auto">
+                            <a class="nav-link" id="a" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" id="a" aria-current="page" href="productos.html">Productos</a>
+                            <a class="nav-link" id="a" aria-current="page" href="./contacto.html">Sobre mi</a>
+                            <br>
+                            <a href="https://wa.me/541125661106" target="_blank">
+                                <button class="wpp1"> 
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png" alt="logo-whatsapp" style="height: 30px; margin-right: 5px;" />
+                                    <a class="wpp2" id="a">Hacé tu pedido ahora</a>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
             </nav>
-        </section>
-        <!--termina el navbar-->
+        </div>
+        <!--end navbar1-->
+        <!--empieza el navbar2-->
+        <div id="navbar2">
+            <section class="franja">
+                <div class="rd">
+                    <a class="rd1" href="../index.html">VALTYCH</a>
+                </div>
+                <div class="wpp">
+                    <a href="https://wa.me/541125661106" target="_blank">
+                        <button class="wpp1"> 
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png" alt="logo-whatsapp" style="height: 30px; margin-right: 5px;" />
+                            <a class="wpp2" id="a">Hacé tu pedido ahora</a>
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <nav class="nav">
+                    <ul class="menu align-center">
+                        <li><a class="boton" href="../index.html">Inicio</a></li>
+                        <li><a class="boton" href="productos.html">Productos</a></li>
+                        <li><a class="boton" href="./contacto.html">Sobre mi</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <!--termina el navbar2-->
     </header>
     <main class="main2">
         <div class="catalogo">
@@ -225,5 +254,6 @@
         </section>
     </footer>
     <!--termina el footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
