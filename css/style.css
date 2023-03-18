@@ -641,6 +641,18 @@ p{
     .wrapper {
         width: 25%;
     }
+    .wrapper .facebook:hover,
+    .wrapper .facebook:hover .tooltip,
+    .wrapper .facebook:hover .tooltip::before {
+        display: none;
+    }
+    
+    .wrapper .instagram:hover,
+    .wrapper .instagram:hover .tooltip,
+    .wrapper .instagram:hover .tooltip::before {
+        background: #E4405F;
+        color: #fff;
+    }
 }
 
 @media (max-width: 351px){
